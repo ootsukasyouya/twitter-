@@ -1,8 +1,11 @@
 <h1>投稿一覧</h1>
 <table>
   <tr>
-    <th>ツイート</th>
+    <div class="bird"></div>
+    <div class="bird -type_2"></div>
+    <div class="bird -type_3"></div>
   </tr>
+<%= link_to '投稿画面へ', new_post_path %>
 <% @posts.each do |post| %>
   <tr>
     <td><%= post.content %></td>
@@ -12,4 +15,3 @@
   </tr>
 <% end %>
 </table>
-<%= link_to '投稿画面へ', new_post_path %>
