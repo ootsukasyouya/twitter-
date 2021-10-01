@@ -1,11 +1,7 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
 h1{
   color: navy;
   text-align: center;
 }
-
 footer {
   position: fixed;
   bottom: 0px;
@@ -16,12 +12,10 @@ footer {
   background-size: 50px 50px;
   z-index:-3;
 }
-
 .header-1 {
   box-sizing: border-box;
   width: 100%;
 }
-
 .header-inner {
   display: flex;
   align-items: center;
@@ -29,7 +23,6 @@ footer {
   height: 60px;
   padding: 0 2em;
 }
-
 .logo-img {
   width: 70px;
 }
@@ -54,7 +47,6 @@ body{
   transform: rotate(45deg);
   animation: moving 16s linear infinite;
 }
-
 .bird.-type_2 {
   animation-delay: 1s;
 }
@@ -62,11 +54,9 @@ body{
 .bird.-type_2:after {
   animation-delay: -2s;
 }
-
 .bird.-type_3 {
   animation-delay: 3s;
 }
-
 @keyframes moving {
   0% {
     top: 47vh;
@@ -81,7 +71,6 @@ body{
     left: 101vw;
   }
 }
-
 .bird:before, .bird:after {
   content: "";
   position: absolute;
@@ -102,7 +91,6 @@ body{
   height: 100%;
   animation: rightWing 8s linear infinite;
 }
-
 @keyframes leftWing {
   0%   { transform: rotate(-30deg); }
   2%   { transform: rotate(-110deg); }
@@ -129,7 +117,6 @@ body{
   98%  { transform: rotate(-110deg); }
   100% { transform: rotate(-30deg); }
 }
-
 @keyframes rightWing {
   0%   { transform: rotate(30deg); }
   2%   { transform: rotate(110deg); }
